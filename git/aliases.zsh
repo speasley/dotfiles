@@ -6,14 +6,12 @@ then
   alias git=$hub_path
 fi
 
-# The rest of my fun git aliases
-alias gl='git pull --prune'
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gp='git push origin HEAD'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gcb='git copy-branch-name'
-alias gb='git branch'
-alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+# git aliases
+alias hist="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit --"
+alias hist10="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit -10 --"
+alias st='status'
+alias br='branch'
+alias ci='commit'
+alias co='checkout'
+alias df='diff'
+alias aa='!git add -u && git add . && git status'
