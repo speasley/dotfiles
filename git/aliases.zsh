@@ -6,6 +6,9 @@ then
   alias git=$hub_path
 fi
 
+# git config
+git config --global color.ui auto
+
 # git aliases
 alias hist="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit --"
 alias hist10="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit -10 --"
