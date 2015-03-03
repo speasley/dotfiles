@@ -1,12 +1,13 @@
+source /opt/boxen/env.sh
+[ -f /opt/boxen/nvm/nvm.sh ] && source /opt/boxen/nvm/nvm.sh && nvm use 0.8.8
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/projects
 
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
@@ -39,3 +40,6 @@ do
 done
 
 unset config_files
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
