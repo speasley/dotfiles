@@ -1,0 +1,10 @@
+"before
+"Give a shortcut key to Nerd Tree
+map &lt;F2&gt; :NERDTreeToggle&lt;CR&gt;
+
+"Change <Leader> from \ to ,
+let mapleader=","
+
+"Stop Vim from writing backup files. Leave this to version control
+set nobackup
+set noswapfile
