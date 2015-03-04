@@ -7,7 +7,7 @@ filetype plugin indent on
 set nocompatible
 
 " set up color scheme
-colorscheme grb256
+colorscheme vividchalk 
 set t_Co=256
 
 " prevents security exploits
