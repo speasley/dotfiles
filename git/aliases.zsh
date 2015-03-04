@@ -10,11 +10,11 @@ fi
 git config --global color.ui auto
 
 # git aliases
-alias hist="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit --"
-alias hist10="log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit -10 --"
-alias st='status'
-alias br='branch'
-alias ci='commit'
-alias co='checkout'
-alias df='diff'
-alias aa='!git add -u && git add . && git status'
+alias ghist="git log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit --"
+alias ghist10="git log --graph --pretty=format:'%C(yellow)%h%Creset |%C(cyan)%d%Creset %Cgreen%s%Creset %ad (%cr) [%an]' --date=short --abbrev-commit -10 --"
+alias gst='git status'
+alias gbr='git branch'
+alias gci='git commit'
+alias gco='git checkout'
+alias gdf='git diff'
+alias gaa='git add -u && git add . && git status'
