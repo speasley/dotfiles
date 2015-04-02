@@ -1,6 +1,11 @@
 execute pathogen#infect()
 syntax on
 
+" No backup and swap files
+set nobackup
+set nowritebackup
+set noswapfile
+
 " Wrap gitcommit file types at the appropriate length
 filetype plugin indent on
 " no need to be vi compatible
