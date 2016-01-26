@@ -34,6 +34,7 @@ set-option -g mouse on
 set -g mouse-select-pane off
 set -g mouse-resize-pane off
 set -g mouse-select-window off
+set -g scroll-in-moused-over-pane "on"
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
 # enable activity alerts
