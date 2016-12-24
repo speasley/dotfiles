@@ -46,3 +46,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # set NODE_PATH
 export PATH="$PATH:./node_modules/.bin"
+
+prefix=${HOME}/.npm-packages
