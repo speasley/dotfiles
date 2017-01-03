@@ -158,10 +158,6 @@ nnoremap <C-l> <C-w>l
 " quote text 
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>
 
-" allow me to create note quicly
-map <leader>n :sp ~/Dropbox/Personal/notes/stream-`date '+\%Y\%m\%d\%H\%M\%S'`.txt<CR><esc>:!ln -s % ~/Dropbox/Personal/notes/latest.txt<CR><leader>h
-map <leader>h i<cr><esc>30i-<esc>a><esc> :r!date +'\%A \%v \%r'<cr>kJk<esc>64i=<esc>yypO
-
 " Vimwiki
 let wiki_1 = {}
 let wiki_1.path = '~/Dropbox/Personal/vimwiki'
@@ -183,10 +179,6 @@ imap <C-d> <esc>ddi
 imap <C-u> <esc>vwUi 
 " toogle commands 
 nmap <C-N><C-N> :set invnumber<CR><ESC>
-
-" abbrivations
-" no need to type my email address alll the time
-iabbrev s@ scottgc@sixsafetysystems.com
 
 " custom commands
 " Command to jump to hosts file
